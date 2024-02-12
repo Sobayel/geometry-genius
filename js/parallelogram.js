@@ -21,25 +21,25 @@
 //     parallelogramAreaSpan.innerText = area;
 // }
 
-// function calculateParallelogramArea(){
-//     const base = getElementById('parallelogram-base');
+function calculateParallelogramArea(){
+    const base = getElementById('parallelogram-base');
 
-//     const height = getElementById('parallelogram-height');
+    const height = getElementById('parallelogram-height');
 
-//     const area = base * height;
-//     console.log('area of the parallelogram is:', area);
+    const area = base * height;
+    console.log('area of the parallelogram is:', area);
 
-//     setInnerTextId('parallelogram-area', area);
-// }
+    setInnerTextId('parallelogram-area', area);
+}
 
-// function getElementById(inputFieldId){
-//     const inputField = document.getElementById(inputFieldId);
-//     const inputValueText = inputField.value;
-//     const inputValue = parseFloat(inputValueText);
-//     return inputValue;
-// }
+function getElementById(inputFieldId){
+    const inputField = document.getElementById(inputFieldId);
+    const inputValueText = inputField.value;
+    const inputValue = parseFloat(inputValueText);
+    return inputValue;
+}
 
-// function setInnerTextId(elementId, area){
-//     const element = document.getElementById(elementId);
-//     element.innerText = area;
-// }
+function setInnerTextId(elementId, area){
+    const element = document.getElementById(elementId);
+    element.innerText = area;
+}
