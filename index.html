@@ -80,6 +80,27 @@
                     </div>
                 </div>
 
+                <!-- Rhombus -->
+                <div class="card w-72 bg-base-100 shadow-xl">
+                    <figure><img src="./images/rhombus.png" alt="rhombus" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title justify-center">Rhombus</h2>
+                        <p class="text-center">Area (A) = 0.5 x d<sup>1</sup> x d<sup>2</sup></p>
+                        <div class="flex">
+                            <input id="rhombus-diagonal-d1" class="w-20 text-2xl p-2 rounded-sm bg-gray-300" type="text" placeholder="d1">
+                            <span class="mr-2 ml-2 pt-3 ">CM</span>
+                            <input class="w-20 text-2xl p-2 rounded-sm bg-gray-300" type="text" id="rhombus-diagonal-d2" placeholder="d2">
+                            <span class="mr-2 ml-2 pt-3 ">CM</span>
+                        </div>
+                        <div>
+                            <p class="text-xl text-center">Area: <span id="rhombus-area">0</span><span>CM<sup>2</sup></span></p>
+                        </div>
+                        <div class="card-actions">
+                            <button onclick="calculateRhombusArea()" class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- pentagon -->
                 <div class="card w-72 bg-base-100 shadow-xl">
                     <figure><img src="./images/pentagon.png" alt="pentagon" /></figure>
@@ -131,6 +152,7 @@
     <script src="js/triangle.js"></script>
     <script src="js/rectangle.js"></script>
     <script src="js/parallelogram.js"></script>
+    <script src="js/rhombus.js"></script>
     <script src="js/pentagon.js"></script>
     <script src="js/ellipse.js"></script>
 </body>
