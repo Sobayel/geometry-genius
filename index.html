@@ -9,8 +9,18 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="m-6">
-    <header></header>
+<body class="m-8">
+    <header>
+        <nav class="flex  bg-blue-200 mt-4 mb-6 rounded-md justify-between">
+            <div class="px-8 py-4">
+                <h1 class="text-3xl font-bold">Interactive</h1>
+                <p class="text-xl font-semibold text-gray-400">Geometry Genius</p>
+            </div>
+            <div class="px-8 py-4">
+                <button class="bg-blue-700  text-xl rounded-md font-bold text-gray-50 w-20 h-8 ">Blog</button>
+            </div>
+        </nav>
+    </header>
     <main>
         <!-- main content container -->
         <div class="flex flex-col md:flex-row">
@@ -85,11 +95,11 @@
                     <figure><img src="./images/rhombus.png" alt="rhombus" /></figure>
                     <div class="card-body">
                         <h2 class="card-title justify-center">Rhombus</h2>
-                        <p class="text-center">Area (A) = 0.5 x d<sup>1</sup> x d<sup>2</sup></p>
+                        <p class="text-center">Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
                         <div class="flex">
                             <input id="rhombus-diagonal-d1" class="w-20 text-2xl p-2 rounded-sm bg-gray-300" type="text" placeholder="d1">
                             <span class="mr-2 ml-2 pt-3 ">CM</span>
-                            <input class="w-20 text-2xl p-2 rounded-sm bg-gray-300" type="text" id="rhombus-diagonal-d2" placeholder="d2">
+                            <input class="w-20 text-2xl p-2 rounded-sm bg-gray-300" type="text" id="rhombus-diagonal-d2" placeholder="d">
                             <span class="mr-2 ml-2 pt-3 ">CM</span>
                         </div>
                         <div>
@@ -145,7 +155,7 @@
             </div>
             <!-- area calculation container -->
             <div class="w-72 h-96 border-2 border-gray-700 rounded-md">
-                <h3 class="text-3xl text-center p-4">Area Calculation</h3>
+                <h3 class="text-3xl underline text-center p-4">Area Calculation</h3>
             </div>
         </div>
     </main>
